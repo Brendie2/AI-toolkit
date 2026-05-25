@@ -550,7 +550,7 @@ section{padding-left:4px}
   <!-- Book cover — hero -->
   <div class="visual-hero">
     <div class="visual-hero-img">
-      <img src="images/mockup.jpg" alt="The AI Solopreneur Toolkit™">
+      <img src="/images/mockup.jpg" alt="The AI Solopreneur Toolkit™">
     </div>
     <div class="visual-hero-caption">
       <div class="vc-tag">The Training · First Edition</div>
@@ -574,7 +574,7 @@ section{padding-left:4px}
 
     <div class="visual-card">
       <div class="visual-card-img">
-        <img src="images/infographics.jpg" alt="AI Infographics built with Brenda Blanche">
+        <img src="/images/infographics.jpg" alt="AI Infographics built with Brenda Blanche">
         <div class="visual-card-overlay">
           <span class="overlay-tag">Real infographics built with AI · No designer</span>
         </div>
@@ -594,7 +594,7 @@ section{padding-left:4px}
 
     <div class="visual-card">
       <div class="visual-card-img">
-        <img src="images/lead-magnet.jpg" alt="AI Lead Magnets built with Brenda Blanche">
+        <img src="/images/lead-magnet.jpg" alt="AI Lead Magnets built with Brenda Blanche">
         <div class="visual-card-overlay">
           <span class="overlay-tag">Live + gated + ready to convert</span>
         </div>
@@ -614,7 +614,7 @@ section{padding-left:4px}
 
     <div class="visual-card">
       <div class="visual-card-img">
-        <img src="images/business-structure.jpg" alt="AI Business Systems built with Brenda Blanche">
+        <img src="/images/business-structure.jpg" alt="AI Business Systems built with Brenda Blanche">
         <div class="visual-card-overlay">
           <span class="overlay-tag">Your complete brand OS · Powered by AI</span>
         </div>
@@ -1128,14 +1128,15 @@ async function submitWaitlistForm(){
   errEl.style.display='none';
   btn.disabled=true; spin.style.display='inline-block'; arr.style.display='none';
 
-  try{
-await fetch('/api/subscribe-toolkit',{
-  method:'POST',
-  headers:{'Content-Type':'application/json'},
-  body:JSON.stringify({ name, email, tier })
-});
+    try {
+    await fetch('/api/subscribe-toolkit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, tier })
     });
-  }catch(e){ console.warn('Subscribe error:',e); }
+  } catch(e) {
+    console.warn('Subscribe error:', e);
+  }
 
   // Show success state — never block on network failure
   btn.disabled=false; spin.style.display='none'; arr.style.display='inline';
