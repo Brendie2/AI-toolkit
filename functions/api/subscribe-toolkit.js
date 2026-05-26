@@ -15,7 +15,7 @@ export async function onRequestPost(context) {
   }
 
   const BREVO_API_KEY = env.BREVO_API_KEY;
-  const BREVO_LIST_ID = 11; // ← Toolkit Leads list (not Scorecard list 3)
+  const BREVO_LIST_ID = 11; // Toolkit Leads list
 
   try {
     const response = await fetch('https://api.brevo.com/v3/contacts', {
