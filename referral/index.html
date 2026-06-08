@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The First Edition Circle™ — Earn Up To 150,000 FCFA This July</title>
+<meta name="description" content="Join 30 exclusive affiliates promoting the AI Solopreneur Toolkit™. Earn 20% commission + bonus prizes. Up to 150,000 FCFA / $250+ in 4 weeks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════
+   RESET + TOKENS
+══════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0C090A; --deep:#131017; --panel:#1B1620; --surface:#221D28;
+  --border:rgba(255,255,255,.07); --border-gold:rgba(196,146,58,.25);
+  --red:#C8102E; --red2:#E01535;
+  --gold:#C4923A; --gold2:#D4A44A; --gold3:#E8C060;
+  --green:#25D366; --green2:#1DAE54;
+  --cream:#F0EAE2; --soft:rgba(240,234,226,.58); --faint:rgba(240,234,226,.16);
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --body:'DM Sans',system-ui,sans-serif;
+  --mono:'Space Mono',monospace;
+  --ease:cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{background:var(--ink);color:var(--cream);font-family:var(--body);font-weight:300;overflow-x:hidden;line-height:1.6}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.18;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.spine{position:fixed;top:0;left:0;width:3px;height:100%;z-index:500;background:linear-gradient(to bottom,var(--gold) 0%,var(--red) 50%,transparent 100%)}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--ink)}::-webkit-scrollbar-thumb{background:var(--gold)}
+
+/* ══════════════════════════════════════
+   NAV
+══════════════════════════════════════ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:400;height:56px;padding:0 2rem 0 calc(3px + 2rem);
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(12,9,10,.95);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+.nav-brand{font-family:var(--mono);font-size:.42rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;
+  font-family:var(--mono);font-size:.44rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  padding:8px 18px;text-decoration:none;transition:background .2s}
+.nav-cta:hover{background:var(--green2)}
+
+/* ══════════════════════════════════════
+   SHARED
+══════════════════════════════════════ */
+.pad{padding:6rem 3.5rem}
+@media(max-width:640px){.pad{padding:4.5rem 1.5rem}}
+.chip{font-family:var(--mono);font-size:.42rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);display:inline-flex;align-items:center;gap:.6rem;margin-bottom:.9rem}
+.chip::before{content:'';width:16px;height:1px;background:var(--gold)}
+.chip.c{justify-content:center}.chip.c::before{display:none}
+.chip.r{color:var(--red)}.chip.r::before{background:var(--red)}
+.chip.g{color:var(--green)}.chip.g::before{background:var(--green)}
+.sec-h2{font-family:var(--serif);font-weight:300;font-size:clamp(2rem,4.5vw,3.8rem);
+  color:var(--cream);line-height:.95;letter-spacing:-.03em;margin-bottom:1rem}
+.sec-h2 em{color:var(--gold);font-style:italic}
+.sec-h2 .r{color:var(--red)}
+.sec-rule{width:44px;height:2px;background:linear-gradient(90deg,var(--gold),var(--red),transparent);margin-bottom:1.8rem}
+.sec-rule.c{margin-left:auto;margin-right:auto}
+
+/* Buttons */
+.btn-wa{display:inline-flex;align-items:center;gap:12px;background:var(--green);color:#fff;
+  font-family:var(--mono);font-size:.58rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  padding:16px 36px;text-decoration:none;position:relative;overflow:hidden;transition:all .25s var(--ease)}
+.btn-wa::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.1) 50%,transparent 70%);transform:translateX(-120%);transition:transform .5s var(--ease)}
+.btn-wa:hover{background:var(--green2);transform:translateY(-2px);box-shadow:0 12px 36px rgba(37,211,102,.3)}
+.btn-wa:hover::before{transform:translateX(120%)}
+.btn-wa .arr{transition:transform .2s}.btn-wa:hover .arr{transform:translateX(4px)}
+.wa-icon{width:20px;height:20px;fill:#fff;flex-shrink:0}
+.btn-ghost-wa{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--green);
+  font-family:var(--mono);font-size:.52rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  padding:14px 28px;border:1px solid rgba(37,211,102,.3);text-decoration:none;transition:all .2s}
+.btn-ghost-wa:hover{background:rgba(37,211,102,.06);border-color:rgba(37,211,102,.6)}
+
+/* Currency pills */
+.curr-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:.6rem}
+.curr{font-family:var(--mono);font-size:.36rem;letter-spacing:.1em;text-transform:uppercase;
+  padding:3px 10px;border:1px solid;display:inline-flex;align-items:center;gap:5px}
+.curr.f{color:rgba(196,146,58,.75);border-color:rgba(196,146,58,.2)}
+.curr.u{color:rgba(240,234,226,.5);border-color:rgba(240,234,226,.1)}
+.curr.n{color:rgba(127,191,127,.6);border-color:rgba(127,191,127,.15)}
+.curr.g{color:rgba(240,200,100,.6);border-color:rgba(240,200,100,.15)}
+
+/* ══════════════════════════════════════
+   HERO
+══════════════════════════════════════ */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:calc(56px + 4rem) 2rem 5rem;position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% -5%,rgba(196,146,58,.22) 0%,transparent 55%),
+    radial-gradient(ellipse 45% 35% at 5% 90%,rgba(200,16,46,.07) 0%,transparent 55%),
+    radial-gradient(ellipse 45% 35% at 95% 90%,rgba(196,146,58,.06) 0%,transparent 55%),
+    linear-gradient(180deg,#170F00 0%,#0C090A 50%,#080609 100%)}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(196,146,58,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(196,146,58,.025) 1px,transparent 1px);
+  background-size:72px 72px;mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,black 0%,transparent 100%)}
+.hero-inner{max-width:820px;position:relative;z-index:2}
+
+.hero-badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(196,146,58,.35);
+  background:rgba(196,146,58,.07);padding:6px 16px;margin-bottom:2rem}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:blink 1.8s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.75)}}
+.badge-text{font-family:var(--mono);font-size:.42rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+
+.hero-kicker{font-family:var(--mono);font-size:.44rem;letter-spacing:.24em;text-transform:uppercase;color:var(--faint);margin-bottom:.8rem}
+
+.hero-h1{font-family:var(--serif);font-weight:300;font-size:clamp(3rem,9vw,9rem);line-height:.86;letter-spacing:-.045em;color:var(--cream);margin-bottom:.8rem}
+.hero-h1 em{color:var(--gold);font-style:italic}
+.hero-h1 .line{display:block}
+
+.hero-amount{display:inline-flex;align-items:baseline;gap:.5rem;margin:1rem 0 .5rem}
+.ha-num{font-family:var(--serif);font-weight:700;font-size:clamp(3.5rem,11vw,11rem);line-height:.85;color:var(--gold);letter-spacing:-.05em}
+.ha-unit{font-family:var(--mono);font-size:clamp(.6rem,2vw,1.1rem);letter-spacing:.1em;color:rgba(196,146,58,.55);align-self:flex-end;margin-bottom:.8rem;text-transform:uppercase}
+
+.hero-currencies{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:2rem}
+.hc{font-family:var(--mono);font-size:.42rem;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border:1px solid}
+.hc.f{color:var(--gold);border-color:rgba(196,146,58,.4);background:rgba(196,146,58,.06)}
+.hc.u{color:rgba(240,234,226,.65);border-color:rgba(240,234,226,.15);background:rgba(240,234,226,.03)}
+.hc.n{color:rgba(127,210,127,.7);border-color:rgba(127,210,127,.2);background:rgba(127,210,127,.04)}
+.hc.g{color:rgba(240,200,80,.7);border-color:rgba(240,200,80,.2);background:rgba(240,200,80,.04)}
+
+.hero-tagline{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(.98rem,1.8vw,1.15rem);
+  color:var(--soft);margin-bottom:2.5rem;line-height:1.65}
+.hero-tagline strong{color:var(--cream);font-style:normal;font-weight:500}
+
+/* countdown */
+.cd{margin-bottom:2.5rem}
+.cd-lbl{font-family:var(--mono);font-size:.4rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);margin-bottom:.8rem}
+.cd-row{display:inline-flex;gap:0;flex-wrap:wrap;justify-content:center}
+.cd-box{padding:.8rem 1.3rem;background:rgba(196,146,58,.07);border:1px solid rgba(196,146,58,.18);text-align:center;margin-right:-1px;min-width:62px}
+.cd-n{font-family:var(--serif);font-weight:700;font-size:2.4rem;line-height:1;color:var(--gold);letter-spacing:-.03em;display:block}
+.cd-u{font-family:var(--mono);font-size:.32rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(196,146,58,.55);display:block;margin-top:.25rem}
+.cd-sep{display:flex;align-items:center;padding:0 .3rem;color:rgba(196,146,58,.3);font-family:var(--serif);font-size:1.4rem;padding-top:.1rem}
+
+.hero-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:0;margin-top:2rem;border:1px solid var(--border)}
+.hs-item{padding:.75rem 1.6rem;border-right:1px solid var(--border);text-align:center}
+.hs-item:last-child{border-right:none}
+.hs-val{font-family:var(--serif);font-weight:600;font-size:1.1rem;color:var(--gold);display:block;letter-spacing:-.01em}
+.hs-lbl{font-family:var(--mono);font-size:.34rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,234,226,.3);display:block;margin-top:.2rem}
+
+/* ══════════════════════════════════════
+   WHAT IS THIS
+══════════════════════════════════════ */
+.what{background:var(--deep);border-top:1px solid var(--border)}
+.what-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:start;margin-top:3rem}
+.what-h2{font-family:var(--serif);font-weight:300;font-size:clamp(2rem,4vw,3.2rem);color:var(--cream);line-height:.98;letter-spacing:-.03em;margin-bottom:1.2rem}
+.what-h2 em{color:var(--gold);font-style:italic}
+.what-p{font-size:.88rem;line-height:1.95;color:var(--soft);margin-bottom:.9rem}
+.what-p strong{color:var(--cream);font-weight:500}
+
+.steps{display:flex;flex-direction:column;gap:1px}
+.step{background:var(--panel);padding:1.5rem;display:flex;align-items:flex-start;gap:1.2rem;position:relative;overflow:hidden}
+.step::before{content:'';position:absolute;top:0;left:0;bottom:0;width:2px;background:var(--gold);opacity:0;transition:opacity .3s}
+.step:hover::before{opacity:1}
+.step-n{font-family:var(--serif);font-weight:700;font-size:2.5rem;color:rgba(196,146,58,.25);flex-shrink:0;line-height:1;letter-spacing:-.04em}
+.step-title{font-size:.88rem;color:var(--cream);font-weight:500;margin-bottom:.3rem}
+.step-desc{font-size:.76rem;line-height:1.7;color:rgba(240,234,226,.38)}
+
+/* ══════════════════════════════════════
+   COMMISSIONS
+══════════════════════════════════════ */
+.comms{border-top:1px solid var(--border);background:linear-gradient(180deg,rgba(196,146,58,.04) 0%,transparent 50%),var(--ink)}
+.comms-head{max-width:620px;margin:0 auto 3.5rem;text-align:center}
+.comms-sub{font-size:.88rem;line-height:1.85;color:var(--soft)}
+
+.comm-table{width:100%;border-collapse:collapse;margin-bottom:2rem}
+.comm-table th{font-family:var(--mono);font-size:.36rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold);padding:.75rem 1.2rem;border-bottom:2px solid rgba(196,146,58,.3);text-align:left}
+.comm-table th:not(:first-child){text-align:center}
+.comm-table td{padding:1.1rem 1.2rem;border-bottom:1px solid var(--border);vertical-align:top}
+.comm-table tr:last-child td{border-bottom:none}
+.comm-table tr:hover td{background:rgba(196,146,58,.03)}
+.tier-badge{font-family:var(--mono);font-size:.38rem;letter-spacing:.14em;text-transform:uppercase;padding:3px 10px;border:1px solid;display:inline-block;margin-bottom:.4rem}
+.t1-b{color:rgba(196,146,58,.7);border-color:rgba(196,146,58,.2)}
+.t2-b{color:var(--red);border-color:rgba(200,16,46,.3)}
+.t3-b{color:var(--gold2);border-color:rgba(196,146,58,.35)}
+.tier-name{font-size:.84rem;color:var(--cream);font-weight:500;display:block}
+.tier-price-sm{font-family:var(--mono);font-size:.36rem;letter-spacing:.08em;color:rgba(240,234,226,.3);text-transform:uppercase;margin-top:2px;display:block}
+.comm-amount{text-align:center}
+.ca-main{font-family:var(--serif);font-weight:700;font-size:1.4rem;color:var(--gold);letter-spacing:-.02em;display:block}
+.ca-subs{display:flex;flex-direction:column;gap:2px;margin-top:.4rem}
+.ca-sub{font-family:var(--mono);font-size:.32rem;letter-spacing:.1em;text-transform:uppercase;display:block}
+.ca-u{color:rgba(240,234,226,.35)}
+.ca-n{color:rgba(127,200,127,.5)}
+.ca-g{color:rgba(220,180,70,.5)}
+.points-cell{text-align:center}
+.pt-big{font-family:var(--serif);font-weight:700;font-size:2rem;color:var(--cream);display:block;letter-spacing:-.03em;line-height:1}
+.pt-lbl{font-family:var(--mono);font-size:.32rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(240,234,226,.3);display:block;margin-top:.2rem}
+
+.auto-badge{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.4rem;
+  background:rgba(196,146,58,.07);border:1px solid rgba(196,146,58,.2);width:100%}
+.auto-badge-icon{color:var(--gold);font-size:.9rem}
+.auto-badge-text{font-size:.8rem;color:var(--soft);line-height:1.55}
+.auto-badge-text strong{color:var(--cream);font-weight:500}
+
+/* ══════════════════════════════════════
+   POINTS SYSTEM
+══════════════════════════════════════ */
+.points{background:var(--deep);border-top:1px solid var(--border)}
+.points-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-top:3rem}
+.points-h{font-family:var(--serif);font-weight:300;font-size:clamp(1.9rem,3.8vw,3rem);color:var(--cream);line-height:.98;letter-spacing:-.03em;margin-bottom:1.2rem}
+.points-h em{color:var(--gold);font-style:italic}
+.points-p{font-size:.88rem;line-height:1.9;color:var(--soft);margin-bottom:.9rem}
+.points-p strong{color:var(--cream);font-weight:500}
+.min-badge{border:1px solid rgba(200,16,46,.3);background:rgba(200,16,46,.07);padding:1rem 1.4rem;margin-top:1.5rem}
+.min-badge-lbl{font-family:var(--mono);font-size:.38rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:.3rem}
+.min-badge-val{font-family:var(--serif);font-weight:700;font-size:1.8rem;color:var(--cream);letter-spacing:-.03em}
+.min-badge-desc{font-size:.74rem;line-height:1.6;color:rgba(240,234,226,.38);margin-top:.3rem}
+
+.pts-cards{display:flex;flex-direction:column;gap:1px}
+.pts-card{background:var(--panel);padding:1.4rem;display:flex;align-items:center;gap:1.5rem;position:relative}
+.pts-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;opacity:0;transition:opacity .3s}
+.pts-card:hover::before{opacity:1}
+.pc1::before{background:rgba(196,146,58,.4)}
+.pc2::before{background:linear-gradient(90deg,var(--red),var(--gold))}
+.pc3::before{background:var(--gold2)}
+.pts-multiplier{font-family:var(--serif);font-weight:700;font-size:3.5rem;line-height:1;letter-spacing:-.05em;flex-shrink:0;min-width:80px;text-align:center}
+.pc1 .pts-multiplier{color:rgba(196,146,58,.8)}
+.pc2 .pts-multiplier{color:var(--red2)}
+.pc3 .pts-multiplier{color:var(--gold2)}
+.pts-info{}
+.pts-tier-name{font-size:.88rem;color:var(--cream);font-weight:500;display:block;margin-bottom:.2rem}
+.pts-tier-sub{font-size:.74rem;line-height:1.55;color:rgba(240,234,226,.38)}
+.pts-point-tag{font-family:var(--mono);font-size:.38rem;letter-spacing:.14em;text-transform:uppercase;margin-left:auto;flex-shrink:0;white-space:nowrap}
+.pc1 .pts-point-tag{color:rgba(196,146,58,.6)}
+.pc2 .pts-point-tag{color:rgba(200,16,46,.7)}
+.pc3 .pts-point-tag{color:var(--gold)}
+
+.pts-examples{margin-top:2rem;padding:1.5rem;background:rgba(196,146,58,.04);border:1px solid rgba(196,146,58,.12)}
+.pts-ex-lbl{font-family:var(--mono);font-size:.38rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.pts-ex-row{display:flex;justify-content:space-between;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--border);gap:1rem}
+.pts-ex-row:last-child{border-bottom:none}
+.pts-ex-desc{font-size:.76rem;color:var(--soft)}
+.pts-ex-result{font-family:var(--mono);font-size:.42rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+
+/* ══════════════════════════════════════
+   LEADERBOARD
+══════════════════════════════════════ */
+.leaderboard{border-top:1px solid var(--border);
+  background:linear-gradient(180deg,rgba(200,16,46,.05) 0%,transparent 50%),var(--ink)}
+.lb-head{max-width:580px;margin:0 auto 4rem;text-align:center}
+.lb-sub{font-size:.88rem;line-height:1.85;color:var(--soft)}
+
+.podium{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:1px;margin-bottom:3rem}
+.podium-spot{background:var(--panel);padding:2rem 1.5rem;text-align:center;position:relative;overflow:hidden}
+.podium-1{border-top:3px solid var(--gold);background:linear-gradient(180deg,rgba(196,146,58,.07) 0%,var(--panel) 40%)}
+.podium-2{border-top:3px solid rgba(196,146,58,.4)}
+.podium-3{border-top:3px solid rgba(196,146,58,.25)}
+.podium-rank{font-family:var(--mono);font-size:.38rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.8rem}
+.podium-1 .podium-rank{color:var(--gold)}
+.podium-2 .podium-rank{color:rgba(196,146,58,.6)}
+.podium-3 .podium-rank{color:rgba(196,146,58,.4)}
+.podium-medal{font-size:2.5rem;display:block;margin-bottom:.8rem;line-height:1}
+.podium-amount{font-family:var(--serif);font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);letter-spacing:-.03em;display:block;margin-bottom:.3rem;line-height:1}
+.podium-1 .podium-amount{color:var(--gold2)}
+.podium-2 .podium-amount{color:rgba(196,146,58,.8)}
+.podium-3 .podium-amount{color:rgba(196,146,58,.6)}
+.podium-equiv{display:flex;flex-direction:column;gap:3px;margin-top:.6rem}
+.pe{font-family:var(--mono);font-size:.32rem;letter-spacing:.1em;text-transform:uppercase}
+.pe.u{color:rgba(240,234,226,.35)}.pe.n{color:rgba(127,200,127,.4)}.pe.g{color:rgba(220,180,70,.4)}
+.podium-rule{font-family:var(--mono);font-size:.34rem;letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(240,234,226,.2);margin-top:1rem;padding-top:.8rem;border-top:1px solid var(--border);line-height:1.7}
+
+.lb-note{padding:1.3rem;background:rgba(200,16,46,.06);border:1px solid rgba(200,16,46,.15);text-align:center}
+.lb-note-text{font-size:.8rem;color:var(--soft);line-height:1.65}
+.lb-note-text strong{color:var(--red);font-weight:500}
+
+/* ══════════════════════════════════════
+   TIER 3 HUNTER
+══════════════════════════════════════ */
+.hunter{background:var(--deep);border-top:1px solid var(--border)}
+.hunter-head{max-width:620px;margin:0 auto 4rem;text-align:center}
+.hunter-sub{font-size:.88rem;line-height:1.85;color:var(--soft)}
+
+.milestones{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-bottom:2rem}
+.milestone{background:var(--panel);padding:1.8rem 1.4rem;text-align:center;position:relative;overflow:hidden;transition:background .3s}
+.milestone::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--red));transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.milestone:hover::before{transform:scaleX(1)}
+.milestone:hover{background:#221D28}
+.ms-sales{font-family:var(--mono);font-size:.38rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.ms-number{font-family:var(--serif);font-weight:700;font-size:2.8rem;color:var(--cream);letter-spacing:-.04em;line-height:1;display:block;margin-bottom:.3rem}
+.ms-label{font-family:var(--mono);font-size:.34rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(240,234,226,.3);margin-bottom:.8rem}
+.ms-prize{font-family:var(--serif);font-weight:600;font-size:1.3rem;color:var(--gold2);letter-spacing:-.02em;display:block;margin-bottom:.3rem}
+.ms-prize-eq{display:flex;flex-direction:column;gap:2px}
+.mpe{font-family:var(--mono);font-size:.3rem;letter-spacing:.08em;text-transform:uppercase}
+.mpe.u{color:rgba(240,234,226,.3)}.mpe.n{color:rgba(127,200,127,.35)}.mpe.g{color:rgba(220,180,70,.35)}
+
+.hunter-track{position:relative;height:4px;background:rgba(196,146,58,.12);margin:2.5rem 0;overflow:visible}
+.hunter-track-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--red));animation:track-fill 2.5s ease-out forwards;width:0}
+@keyframes track-fill{to{width:100%}}
+.track-dots{position:absolute;top:50%;transform:translateY(-50%);left:0;right:0;display:flex;justify-content:space-between;padding:0 10%}
+.track-dot{width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--ink);transform:translateY(-50%)}
+
+.hunter-note{padding:1.5rem;background:rgba(196,146,58,.05);border:1px solid rgba(196,146,58,.15)}
+.hn-lbl{font-family:var(--mono);font-size:.38rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.hn-text{font-size:.8rem;line-height:1.75;color:var(--soft)}
+.hn-text strong{color:var(--cream);font-weight:500}
+
+/* ══════════════════════════════════════
+   REALISTIC EXAMPLE
+══════════════════════════════════════ */
+.example{border-top:1px solid var(--border);
+  background:linear-gradient(180deg,rgba(196,146,58,.03) 0%,transparent 50%),var(--ink)}
+.example-head{max-width:580px;margin:0 auto 4rem;text-align:center}
+.scenarios{display:grid;grid-template-columns:repeat(3,1fr);gap:1px}
+.scenario{background:var(--panel);display:flex;flex-direction:column;overflow:hidden}
+.sc-header{padding:1.5rem 1.8rem 0}
+.sc-tag{font-family:var(--mono);font-size:.36rem;letter-spacing:.16em;text-transform:uppercase;padding:3px 10px;border:1px solid;display:inline-block;margin-bottom:.8rem}
+.sc-a .sc-tag{color:rgba(127,200,127,.7);border-color:rgba(127,200,127,.2)}
+.sc-b .sc-tag{color:var(--gold);border-color:rgba(196,146,58,.3)}
+.sc-c .sc-tag{color:var(--red);border-color:rgba(200,16,46,.3)}
+.sc-name{font-family:var(--serif);font-weight:600;font-size:1.1rem;color:var(--cream);letter-spacing:-.01em;margin-bottom:.4rem}
+.sc-desc{font-size:.73rem;line-height:1.6;color:rgba(240,234,226,.38);margin-bottom:1.2rem}
+.sc-sales{padding:0 1.8rem 1.2rem;flex:1}
+.sc-sales-lbl{font-family:var(--mono);font-size:.36rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(240,234,226,.3);margin-bottom:.7rem}
+.sc-sale{display:flex;justify-content:space-between;align-items:center;padding:.45rem 0;border-bottom:1px solid var(--border);font-size:.74rem;gap:.5rem}
+.sc-sale:last-child{border-bottom:none}
+.sc-sale-desc{color:rgba(240,234,226,.45)}
+.sc-sale-val{font-family:var(--mono);font-size:.38rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.sc-breakdown{border-top:2px solid var(--border);padding:1.2rem 1.8rem}
+.sc-line{display:flex;justify-content:space-between;align-items:baseline;padding:.35rem 0;font-size:.78rem;gap:.5rem}
+.sc-line-lbl{color:rgba(240,234,226,.38)}
+.sc-line-val{font-family:var(--mono);font-size:.38rem;letter-spacing:.08em;color:var(--soft)}
+.sc-line.hl .sc-line-lbl{color:var(--soft)}
+.sc-line.hl .sc-line-val{color:var(--gold)}
+.sc-total{border-top:2px solid rgba(196,146,58,.3);margin-top:.5rem;padding:.7rem 0 0}
+.sc-total-lbl{font-family:var(--mono);font-size:.36rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem;display:block}
+.sc-total-val{font-family:var(--serif);font-weight:700;font-size:2rem;color:var(--gold2);letter-spacing:-.03em;display:block;line-height:1}
+.sc-total-eq{font-family:var(--mono);font-size:.34rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(240,234,226,.3);margin-top:.3rem;display:block}
+
+/* ══════════════════════════════════════
+   ATTEND FOR FREE
+══════════════════════════════════════ */
+.free-section{background:var(--deep);border-top:1px solid var(--border)}
+.free-inner{max-width:760px;margin:0 auto;text-align:center}
+.free-h{font-family:var(--serif);font-weight:300;font-size:clamp(2.2rem,5vw,4rem);color:var(--cream);line-height:.9;letter-spacing:-.04em;margin-bottom:1rem}
+.free-h em{color:var(--green);font-style:italic}
+.free-rule{width:44px;height:2px;background:linear-gradient(90deg,var(--green),var(--gold));margin:0 auto 2rem}
+.free-p{font-size:.88rem;line-height:1.9;color:var(--soft);margin-bottom:1.5rem}
+.free-p strong{color:var(--cream);font-weight:500}
+.free-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:2.5rem 0;text-align:left}
+.free-card{background:var(--panel);padding:1.6rem}
+.fc-tag{font-family:var(--mono);font-size:.36rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(37,211,102,.6);margin-bottom:.6rem}
+.fc-name{font-size:.88rem;color:var(--cream);font-weight:500;margin-bottom:.4rem}
+.fc-ticket{font-family:var(--mono);font-size:.38rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(240,234,226,.3);margin-bottom:.8rem}
+.fc-calc{font-size:.78rem;line-height:1.7;color:rgba(240,234,226,.42)}
+.fc-calc span{color:var(--green);font-weight:500}
+.free-pull{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(.98rem,1.8vw,1.15rem);
+  color:var(--cream);border-left:2px solid var(--green);padding:1rem 1.5rem 1rem 1.8rem;
+  background:rgba(37,211,102,.04);margin-top:2rem;text-align:left}
+
+/* ══════════════════════════════════════
+   EXCLUSIVE
+══════════════════════════════════════ */
+.exclusive{border-top:1px solid var(--border);
+  background:linear-gradient(180deg,rgba(200,16,46,.05) 0%,transparent 50%),var(--ink)}
+.excl-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:3rem}
+.excl-h{font-family:var(--serif);font-weight:300;font-size:clamp(2rem,4vw,3.2rem);color:var(--cream);line-height:.98;letter-spacing:-.03em;margin-bottom:1.2rem}
+.excl-h em{color:var(--red);font-style:italic}
+.excl-p{font-size:.88rem;line-height:1.9;color:var(--soft);margin-bottom:.9rem}
+.excl-p strong{color:var(--cream);font-weight:500}
+
+.spots-visual{text-align:center;position:relative}
+.spots-big{font-family:var(--serif);font-weight:300;font-size:clamp(6rem,14vw,13rem);color:var(--red);line-height:.85;letter-spacing:-.06em;display:block;opacity:.9}
+.spots-label{font-family:var(--mono);font-size:.44rem;letter-spacing:.24em;text-transform:uppercase;color:var(--soft)}
+.spots-sub{font-family:var(--serif);font-style:italic;font-size:.95rem;color:rgba(240,234,226,.38);margin-top:.5rem}
+
+.rules-list{display:flex;flex-direction:column;gap:1px}
+.rule{background:var(--panel);padding:1.2rem 1.5rem;display:flex;align-items:center;gap:1rem}
+.rule-icon{color:var(--gold);font-size:.9rem;flex-shrink:0}
+.rule-text{font-size:.8rem;line-height:1.6;color:var(--soft)}
+.rule-text strong{color:var(--cream);font-weight:500}
+
+/* ══════════════════════════════════════
+   TIMELINE
+══════════════════════════════════════ */
+.timeline{background:var(--deep);border-top:1px solid var(--border)}
+.tl-head{text-align:center;margin-bottom:4rem}
+.tl-track{position:relative;max-width:800px;margin:0 auto}
+.tl-line{position:absolute;top:20px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--red),var(--gold));z-index:0}
+.tl-events{display:grid;grid-template-columns:repeat(4,1fr);position:relative;z-index:1;gap:1rem}
+.tl-event{text-align:center}
+.tl-dot{width:40px;height:40px;border-radius:50%;border:2px solid;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-family:var(--mono);font-size:.32rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.tl-open .tl-dot{border-color:var(--gold);background:rgba(196,146,58,.1);color:var(--gold)}
+.tl-reg .tl-dot{border-color:var(--gold);background:rgba(196,146,58,.1);color:var(--gold)}
+.tl-earn .tl-dot{border-color:var(--red);background:rgba(200,16,46,.1);color:var(--red)}
+.tl-end .tl-dot{border-color:var(--green);background:rgba(37,211,102,.1);color:var(--green)}
+.tl-date{font-family:var(--mono);font-size:.36rem;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:.4rem}
+.tl-open .tl-date{color:var(--gold)}
+.tl-reg .tl-date{color:var(--gold)}
+.tl-earn .tl-date{color:var(--red)}
+.tl-end .tl-date{color:var(--green)}
+.tl-label{font-size:.8rem;color:var(--cream);font-weight:500;display:block;margin-bottom:.2rem}
+.tl-desc{font-size:.7rem;line-height:1.55;color:rgba(240,234,226,.35)}
+
+/* ══════════════════════════════════════
+   FINAL CTA
+══════════════════════════════════════ */
+.final{border-top:2px solid rgba(37,211,102,.3);text-align:center;position:relative;overflow:hidden;
+  background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(37,211,102,.07) 0%,transparent 65%),
+    linear-gradient(180deg,#0D1A10 0%,#0C090A 60%,#080609 100%)}
+.final-inner{max-width:640px;margin:0 auto;position:relative;z-index:2}
+.final-h{font-family:var(--serif);font-weight:300;font-size:clamp(2.5rem,6.5vw,5.5rem);
+  color:var(--cream);line-height:.9;letter-spacing:-.045em;margin-bottom:1rem}
+.final-h em{color:var(--green);font-style:italic}
+.final-rule{width:44px;height:2px;background:linear-gradient(90deg,var(--green),var(--gold));margin:0 auto 2rem}
+.final-body{font-size:.88rem;line-height:1.9;color:var(--soft);margin-bottom:2.5rem}
+.final-body strong{color:var(--cream);font-weight:500}
+.final-amount{display:flex;justify-content:center;align-items:baseline;gap:.5rem;margin-bottom:2.5rem}
+.fa-n{font-family:var(--serif);font-weight:700;font-size:4rem;color:var(--gold);letter-spacing:-.05em;line-height:1}
+.fa-u{font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(196,146,58,.5);align-self:flex-end;margin-bottom:.4rem}
+.final-note{font-family:var(--mono);font-size:.38rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(240,234,226,.12);margin-top:1.5rem;line-height:1.9}
+
+/* FOOTER */
+.footer{padding:2rem 3.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-brand{font-family:var(--mono);font-size:.42rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.footer-note{font-family:var(--mono);font-size:.38rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(240,234,226,.1)}
+
+/* STICKY MOBILE CTA */
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:300;padding:1rem 1.5rem;
+  background:rgba(12,9,10,.97);backdrop-filter:blur(20px);border-top:1px solid rgba(37,211,102,.2)}
+.sticky-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.sticky-cta-text{font-family:var(--mono);font-size:.38rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.sticky-cta-text strong{color:var(--green);display:block;margin-bottom:2px}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .what-grid,.points-inner,.excl-grid{grid-template-columns:1fr}
+  .podium{grid-template-columns:1fr 1fr 1fr}
+  .scenarios,.free-cards,.milestones{grid-template-columns:1fr}
+  .tl-events{grid-template-columns:1fr 1fr;row-gap:2rem}
+  .tl-line{display:none}
+  .comm-table{font-size:.8rem}
+}
+@media(max-width:640px){
+  .hero-stats{flex-direction:column}.hs-item{border-right:none;border-bottom:1px solid var(--border)}
+  .hs-item:last-child{border-bottom:none}
+  .hero-amount{flex-direction:column;align-items:center;gap:.2rem}
+  .sticky-cta{display:block}
+  body{padding-bottom:80px}
+}
+</style>
+</head>
+<body>
+<div class="spine"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-brand">First Edition Circle™ · Affiliate Program</div>
+  <a class="nav-cta" href="[WHATSAPP-GROUP-LINK]" target="_blank">
+    <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Join the Group →
+  </a>
+</nav>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      <span class="badge-text">First Edition Circle™ · 30 Affiliates Only · Opens June 14</span>
+    </div>
+
+    <div class="hero-kicker">The AI Solopreneur Toolkit™ Referral Program</div>
+
+    <h1 class="hero-h1">
+      <span class="line">Make July</span>
+      <span class="line">your most</span>
+      <span class="line"><em>profitable</em> month.</span>
+    </h1>
+
+    <div class="hero-amount">
+      <span class="ha-num">150K</span>
+      <span class="ha-unit">FCFA possible</span>
+    </div>
+
+    <div class="hero-currencies">
+      <span class="hc f">150,000 FCFA</span>
+      <span class="hc u">$250+ USD</span>
+      <span class="hc n">₦358,000+ NGN</span>
+      <span class="hc g">GH₵3,115+ GHS</span>
+    </div>
+
+    <p class="hero-tagline">
+      Earn <strong>20% commission</strong> on every ticket you sell for the AI Solopreneur Toolkit™ First Edition.<br>
+      Plus leaderboard cash prizes. Plus Tier 3 Hunter Bonuses.<br>
+      4 weeks. 30 spots. Your summer sorted.
+    </p>
+
+    <div class="cd">
+      <div class="cd-lbl">Program opens · June 14, 2026</div>
+      <div class="cd-row">
+        <div class="cd-box"><span class="cd-n" id="cd-d">00</span><span class="cd-u">Days</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span class="cd-n" id="cd-h">00</span><span class="cd-u">Hrs</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span class="cd-n" id="cd-m">00</span><span class="cd-u">Min</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-box"><span class="cd-n" id="cd-s">00</span><span class="cd-u">Sec</span></div>
+      </div>
+    </div>
+
+    <a class="btn-wa" href="[WHATSAPP-GROUP-LINK]" target="_blank">
+      <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Join the WhatsApp Group <span class="arr">→</span>
+    </a>
+
+    <div class="hero-stats">
+      <div class="hs-item"><span class="hs-val">20%</span><span class="hs-lbl">Commission per sale</span></div>
+      <div class="hs-item"><span class="hs-val">30</span><span class="hs-lbl">Affiliates only</span></div>
+      <div class="hs-item"><span class="hs-val">4 weeks</span><span class="hs-lbl">June 14 – July 16</span></div>
+      <div class="hs-item"><span class="hs-val">3 income streams</span><span class="hs-lbl">Commission + prizes + bonuses</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     WHAT IS THIS
+══════════════════════════════════════ -->
+<section class="what pad">
+  <div class="what-grid">
+    <div>
+      <div class="chip">What is the First Edition Circle™?</div>
+      <h2 class="what-h2">A 4-week affiliate sprint with <em>three ways</em> to earn.</h2>
+      <div class="sec-rule"></div>
+      <p class="what-p">The AI Solopreneur Toolkit™ is a live AI training event starting July 16. As a First Edition Circle affiliate, you promote it — and earn every time someone buys a ticket through your unique Selar link.</p>
+      <p class="what-p">But the earning doesn't stop at commission. The program has a <strong>points-based leaderboard</strong> with cash prizes for the top 3 performers, plus a <strong>Tier 3 Hunter Bonus</strong> for affiliates who specialise in the premium ticket.</p>
+      <p class="what-p">Combined, the three income streams give you the possibility of earning <strong>over 150,000 FCFA / $250+</strong> in four weeks — even if you have no prior affiliate experience.</p>
+    </div>
+
+    <div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-n">01</span>
+          <div>
+            <div class="step-title">Join the WhatsApp group</div>
+            <p class="step-desc">Sign up through the group link on this page. Limited to 30 affiliates. Once you're in, you go through the registration process and receive your unique Selar affiliate link.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-n">02</span>
+          <div>
+            <div class="step-title">Share your link</div>
+            <p class="step-desc">Share your link on WhatsApp, LinkedIn, Instagram — wherever your network is. Every time someone buys a ticket through your link, you earn 20% automatically. Selar tracks and pays everything.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-n">03</span>
+          <div>
+            <div class="step-title">Collect your earnings</div>
+            <p class="step-desc">Commission pays automatically via Selar after each sale. Leaderboard prizes and Tier 3 Hunter Bonuses are paid at the end of the 4-week program on July 16.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     COMMISSIONS
+══════════════════════════════════════ -->
+<section class="comms pad">
+  <div class="comms-head">
+    <div class="chip c">Income stream 01</div>
+    <h2 class="sec-h2">20% on <em>every single sale.</em></h2>
+    <div class="sec-rule c"></div>
+    <p class="comms-sub">Three ticket tiers. Three commission rates. You earn on every tier — even if you only make one sale. Selar tracks it automatically and pays into your account.</p>
+  </div>
+
+  <table class="comm-table">
+    <thead>
+      <tr>
+        <th>Ticket Tier</th>
+        <th>Your 20% Commission</th>
+        <th>Points per sale</th>
+        <th>5 sales earnings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="tier-badge t1-b">Tier 1</span>
+          <span class="tier-name">Foundation Build</span>
+          <span class="tier-price-sm">5,000 FCFA · $9 · ₦12,500 · GH₵75</span>
+        </td>
+        <td class="comm-amount">
+          <span class="ca-main">1,000 FCFA</span>
+          <div class="ca-subs">
+            <span class="ca-sub ca-u">≈ $1.80 USD</span>
+            <span class="ca-sub ca-n">≈ ₦2,900 NGN</span>
+            <span class="ca-sub ca-g">≈ GH₵15</span>
+          </div>
+        </td>
+        <td class="points-cell">
+          <span class="pt-big">1</span>
+          <span class="pt-lbl">point</span>
+        </td>
+        <td class="comm-amount">
+          <span class="ca-main">5,000 FCFA</span>
+          <div class="ca-subs">
+            <span class="ca-sub ca-u">≈ $9 USD</span>
+            <span class="ca-sub ca-n">≈ ₦14,500</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="tier-badge t2-b">Tier 2</span>
+          <span class="tier-name">Audience Engine</span>
+          <span class="tier-price-sm">10,000 FCFA · $18 · ₦25,000 · GH₵150</span>
+        </td>
+        <td class="comm-amount">
+          <span class="ca-main">2,000 FCFA</span>
+          <div class="ca-subs">
+            <span class="ca-sub ca-u">≈ $3.60 USD</span>
+            <span class="ca-sub ca-n">≈ ₦5,800 NGN</span>
+            <span class="ca-sub ca-g">≈ GH₵30</span>
+          </div>
+        </td>
+        <td class="points-cell">
+          <span class="pt-big">3</span>
+          <span class="pt-lbl">points</span>
+        </td>
+        <td class="comm-amount">
+          <span class="ca-main">10,000 FCFA</span>
+          <div class="ca-subs">
+            <span class="ca-sub ca-u">≈ $18 USD</span>
+            <span class="ca-sub ca-n">≈ ₦29,000</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="tier-badge t3-b">Tier 3</span>
+          <span class="tier-name">Complete Business OS</span>
+          <span class="tier-price-sm">20,000 FCFA · $37 · ₦54,900 · GH₵300</span>
+        </td>
+        <td class="comm-amount">
+          <span class="ca-main">4,000 FCFA</span>
+          <div class="ca-subs">
+            <span class="ca-sub ca-u">≈ $7.20 USD</span>
+            <span class="ca-sub ca-n">≈ ₦11,600 NGN</span>
+            <span class="ca-sub ca-g">≈ GH₵60</span>
+          </div>
+        </td>
+        <td class="points-cell">
+          <span class="pt-big">5</span>
+          <span class="pt-lbl">points</span>
+        </td>
+        <td class="comm-amount">
+          <span class="ca-main">20,000 FCFA</span>
+          <div class="ca-subs">
+            <span class="ca-sub ca-u">≈ $36 USD</span>
+            <span class="ca-sub ca-n">≈ ₦58,000</span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="auto-badge">
+    <span class="auto-badge-icon">✦</span>
+    <p class="auto-badge-text"><strong>All commissions are automatic.</strong> Selar tracks every sale through your unique link and pays your commission directly into your account. You don't need to chase anyone — the system handles it. Every single sale, every single tier, irrespective of whether you make one sale or fifty.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     POINTS SYSTEM
+══════════════════════════════════════ -->
+<section class="points pad">
+  <div class="points-inner">
+    <div>
+      <div class="chip">Income stream 02 — Part A</div>
+      <h2 class="points-h">The points system that<br><em>unlocks prizes.</em></h2>
+      <div class="sec-rule"></div>
+      <p class="points-p">Every ticket you sell earns you points. Points go onto the leaderboard. The top 3 affiliates with <strong>a minimum of 30 points</strong> win cash prizes on top of their commission earnings.</p>
+      <p class="points-p">The points system rewards quality over quantity. <strong>One Tier 3 sale earns 5 points</strong> — the same as five Tier 1 sales. So you can hit the leaderboard through volume, value, or a mix of both.</p>
+      <div class="min-badge">
+        <div class="min-badge-lbl">Minimum to qualify</div>
+        <div class="min-badge-val">30 Points</div>
+        <div class="min-badge-desc">You must reach 30 points to appear on the leaderboard and qualify for cash prizes. This protects the integrity of the competition.</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="pts-cards">
+        <div class="pts-card pc1">
+          <span class="pts-multiplier">1</span>
+          <div class="pts-info">
+            <span class="pts-tier-name">Foundation Build sale</span>
+            <span class="pts-tier-sub">Sell 30 Tier 1 tickets to reach the minimum. Every sale counts.</span>
+          </div>
+          <span class="pts-point-tag">Tier 1 = 1 pt / sale</span>
+        </div>
+        <div class="pts-card pc2">
+          <span class="pts-multiplier">3</span>
+          <div class="pts-info">
+            <span class="pts-tier-name">Audience Engine sale</span>
+            <span class="pts-tier-sub">10 Tier 2 sales = 30 points. Three times the value per sale.</span>
+          </div>
+          <span class="pts-point-tag">Tier 2 = 3 pts / sale</span>
+        </div>
+        <div class="pts-card pc3">
+          <span class="pts-multiplier">5</span>
+          <div class="pts-info">
+            <span class="pts-tier-name">Complete Business OS sale</span>
+            <span class="pts-tier-sub">Just 6 Tier 3 sales = 30 points. The fastest route to the leaderboard.</span>
+          </div>
+          <span class="pts-point-tag">Tier 3 = 5 pts / sale</span>
+        </div>
+      </div>
+
+      <div class="pts-examples">
+        <div class="pts-ex-lbl">How to reach 30 points</div>
+        <div class="pts-ex-row">
+          <span class="pts-ex-desc">Sell 30 × Tier 1 only</span>
+          <span class="pts-ex-result">30 pts ✓</span>
+        </div>
+        <div class="pts-ex-row">
+          <span class="pts-ex-desc">Sell 10 × Tier 2 only</span>
+          <span class="pts-ex-result">30 pts ✓</span>
+        </div>
+        <div class="pts-ex-row">
+          <span class="pts-ex-desc">Sell 6 × Tier 3 only</span>
+          <span class="pts-ex-result">30 pts ✓</span>
+        </div>
+        <div class="pts-ex-row">
+          <span class="pts-ex-desc">Mix: 5 Tier 1 + 5 Tier 2 + 2 Tier 3</span>
+          <span class="pts-ex-result">25+10 pts ✓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     LEADERBOARD
+══════════════════════════════════════ -->
+<section class="leaderboard pad">
+  <div class="lb-head">
+    <div class="chip c">Income stream 02 — Part B</div>
+    <h2 class="sec-h2">The <em>leaderboard</em> prizes.</h2>
+    <div class="sec-rule c"></div>
+    <p class="lb-sub">The top 3 affiliates with a minimum of 30 points win cash prizes at the close of the program on July 16. These prizes are paid in addition to all commission earnings — they are not a replacement.</p>
+  </div>
+
+  <div class="podium">
+    <div class="podium-spot podium-2">
+      <div class="podium-rank">2nd Place</div>
+      <span class="podium-medal">🥈</span>
+      <span class="podium-amount">30,000 FCFA</span>
+      <div class="podium-equiv">
+        <span class="pe u">≈ $54 USD</span>
+        <span class="pe n">≈ ₦87,000 NGN</span>
+        <span class="pe g">≈ GH₵810 GHS</span>
+      </div>
+      <div class="podium-rule">Minimum 30 points<br>to qualify</div>
+    </div>
+    <div class="podium-spot podium-1">
+      <div class="podium-rank">1st Place</div>
+      <span class="podium-medal">🥇</span>
+      <span class="podium-amount">50,000 FCFA</span>
+      <div class="podium-equiv">
+        <span class="pe u">≈ $90 USD</span>
+        <span class="pe n">≈ ₦145,000 NGN</span>
+        <span class="pe g">≈ GH₵1,350 GHS</span>
+      </div>
+      <div class="podium-rule">Highest point total<br>wins the top prize</div>
+    </div>
+    <div class="podium-spot podium-3">
+      <div class="podium-rank">3rd Place</div>
+      <span class="podium-medal">🥉</span>
+      <span class="podium-amount">20,000 FCFA</span>
+      <div class="podium-equiv">
+        <span class="pe u">≈ $36 USD</span>
+        <span class="pe n">≈ ₦58,000 NGN</span>
+        <span class="pe g">≈ GH₵540 GHS</span>
+      </div>
+      <div class="podium-rule">Minimum 30 points<br>to qualify</div>
+    </div>
+  </div>
+
+  <div class="lb-note">
+    <p class="lb-note-text">These prizes are <strong>in addition to your 20% commission earnings</strong> — not a replacement. If you finish 1st and earned 45,000 FCFA in commissions, you receive 45,000 + 50,000 = <strong>95,000 FCFA total</strong> from income streams 1 and 2 alone.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     TIER 3 HUNTER
+══════════════════════════════════════ -->
+<section class="hunter pad">
+  <div class="hunter-head">
+    <div class="chip c r">Income stream 03</div>
+    <h2 class="sec-h2">The Tier 3 <span class="r">Hunter</span> Bonus.</h2>
+    <div class="sec-rule c"></div>
+    <p class="hunter-sub">This bonus rewards affiliates who focus on selling the premium ticket — the Complete Business OS at 20,000 FCFA. The more Tier 3 tickets you sell, the bigger the cash bonus you unlock. These milestones stack on top of everything else.</p>
+  </div>
+
+  <div class="milestones">
+    <div class="milestone">
+      <div class="ms-sales">Tier 3 sales</div>
+      <span class="ms-number">5</span>
+      <span class="ms-label">sales · Milestone 1</span>
+      <span class="ms-prize">10,000 FCFA</span>
+      <div class="ms-prize-eq">
+        <span class="mpe u">≈ $18 USD</span>
+        <span class="mpe n">≈ ₦29,000</span>
+        <span class="mpe g">≈ GH₵180</span>
+      </div>
+    </div>
+    <div class="milestone">
+      <div class="ms-sales">Tier 3 sales</div>
+      <span class="ms-number">10</span>
+      <span class="ms-label">sales · Milestone 2</span>
+      <span class="ms-prize">20,000 FCFA</span>
+      <div class="ms-prize-eq">
+        <span class="mpe u">≈ $36 USD</span>
+        <span class="mpe n">≈ ₦58,000</span>
+        <span class="mpe g">≈ GH₵360</span>
+      </div>
+    </div>
+    <div class="milestone">
+      <div class="ms-sales">Tier 3 sales</div>
+      <span class="ms-number">15</span>
+      <span class="ms-label">sales · Milestone 3</span>
+      <span class="ms-prize">35,000 FCFA</span>
+      <div class="ms-prize-eq">
+        <span class="mpe u">≈ $63 USD</span>
+        <span class="mpe n">≈ ₦101,500</span>
+        <span class="mpe g">≈ GH₵630</span>
+      </div>
+    </div>
+    <div class="milestone">
+      <div class="ms-sales">Tier 3 sales</div>
+      <span class="ms-number">18</span>
+      <span class="ms-label">sales · Milestone 4 · MAX</span>
+      <span class="ms-prize">50,000 FCFA</span>
+      <div class="ms-prize-eq">
+        <span class="mpe u">≈ $90 USD</span>
+        <span class="mpe n">≈ ₦145,000</span>
+        <span class="mpe g">≈ GH₵1,350</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hunter-note">
+    <div class="hn-lbl">How the milestones work</div>
+    <p class="hn-text">The Tier 3 Hunter Bonus is cumulative by milestone — you receive the bonus for the highest milestone you reach. <strong>Reach 18 Tier 3 sales and you receive 50,000 FCFA as your Hunter Bonus</strong>, plus all your commission earnings from those 18 sales (18 × 4,000 = 72,000 FCFA), plus any leaderboard prize you qualify for. The milestones do not stack on each other — the highest one you reach is the one that pays.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     REALISTIC EXAMPLE
+══════════════════════════════════════ -->
+<section class="example pad">
+  <div class="example-head">
+    <div class="chip c">Real numbers. Real scenarios.</div>
+    <h2 class="sec-h2">What you could <em>actually</em> earn.</h2>
+    <div class="sec-rule c"></div>
+    <p style="font-size:.88rem;line-height:1.85;color:var(--soft)">Three realistic scenarios — from casual to committed to top performer. See exactly how the three income streams add up.</p>
+  </div>
+
+  <div class="scenarios">
+    <!-- Scenario A -->
+    <div class="scenario sc-a">
+      <div class="sc-header">
+        <span class="sc-tag">Casual</span>
+        <div class="sc-name">The Side Hustler</div>
+        <p class="sc-desc">You share with your existing network. No aggressive push. Just 10 conversations leading to sales.</p>
+      </div>
+      <div class="sc-sales">
+        <div class="sc-sales-lbl">Your sales</div>
+        <div class="sc-sale"><span class="sc-sale-desc">5 × Tier 1 (Foundation Build)</span><span class="sc-sale-val">5,000 FCFA</span></div>
+        <div class="sc-sale"><span class="sc-sale-desc">3 × Tier 2 (Audience Engine)</span><span class="sc-sale-val">6,000 FCFA</span></div>
+        <div class="sc-sale"><span class="sc-sale-desc">2 × Tier 3 (Agency Pass)</span><span class="sc-sale-val">8,000 FCFA</span></div>
+      </div>
+      <div class="sc-breakdown">
+        <div class="sc-line"><span class="sc-line-lbl">Total commissions</span><span class="sc-line-val">19,000 FCFA</span></div>
+        <div class="sc-line"><span class="sc-line-lbl">Points total</span><span class="sc-line-val">24 pts (doesn't qualify)</span></div>
+        <div class="sc-line"><span class="sc-line-lbl">Leaderboard prize</span><span class="sc-line-val">—</span></div>
+        <div class="sc-line"><span class="sc-line-lbl">Tier 3 Hunter Bonus</span><span class="sc-line-val">—</span></div>
+        <div class="sc-total">
+          <span class="sc-total-lbl">Total earnings</span>
+          <span class="sc-total-val">19,000 FCFA</span>
+          <span class="sc-total-eq">≈ $34 USD · ₦55,000 NGN</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scenario B -->
+    <div class="scenario sc-b">
+      <div class="sc-header">
+        <span class="sc-tag">Committed</span>
+        <div class="sc-name">The Consistent Closer</div>
+        <p class="sc-desc">You post regularly, DM your network, hit the leaderboard minimum, and qualify for the Tier 3 Hunter.</p>
+      </div>
+      <div class="sc-sales">
+        <div class="sc-sales-lbl">Your sales</div>
+        <div class="sc-sale"><span class="sc-sale-desc">10 × Tier 1 (Foundation Build)</span><span class="sc-sale-val">10,000 FCFA</span></div>
+        <div class="sc-sale"><span class="sc-sale-desc">5 × Tier 2 (Audience Engine)</span><span class="sc-sale-val">10,000 FCFA</span></div>
+        <div class="sc-sale"><span class="sc-sale-desc">5 × Tier 3 (Agency Pass)</span><span class="sc-sale-val">20,000 FCFA</span></div>
+      </div>
+      <div class="sc-breakdown">
+        <div class="sc-line"><span class="sc-line-lbl">Total commissions</span><span class="sc-line-val">40,000 FCFA</span></div>
+        <div class="sc-line"><span class="sc-line-lbl">Points total</span><span class="sc-line-val">50 pts ✓ qualifies</span></div>
+        <div class="sc-line hl"><span class="sc-line-lbl">Leaderboard prize (if 3rd)</span><span class="sc-line-val">+20,000 FCFA</span></div>
+        <div class="sc-line hl"><span class="sc-line-lbl">Tier 3 Hunter (5 sales)</span><span class="sc-line-val">+10,000 FCFA</span></div>
+        <div class="sc-total">
+          <span class="sc-total-lbl">Total earnings</span>
+          <span class="sc-total-val">70,000 FCFA</span>
+          <span class="sc-total-eq">≈ $126 USD · ₦203,000 NGN</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scenario C -->
+    <div class="scenario sc-c">
+      <div class="sc-header">
+        <span class="sc-tag">Top Performer</span>
+        <div class="sc-name">The Tier 3 Hunter</div>
+        <p class="sc-desc">You go all in. You focus on the premium ticket. You hit the max Hunter Bonus and dominate the leaderboard.</p>
+      </div>
+      <div class="sc-sales">
+        <div class="sc-sales-lbl">Your sales</div>
+        <div class="sc-sale"><span class="sc-sale-desc">5 × Tier 2 (Audience Engine)</span><span class="sc-sale-val">10,000 FCFA</span></div>
+        <div class="sc-sale"><span class="sc-sale-desc">18 × Tier 3 (Agency Pass)</span><span class="sc-sale-val">72,000 FCFA</span></div>
+      </div>
+      <div class="sc-breakdown">
+        <div class="sc-line"><span class="sc-line-lbl">Total commissions</span><span class="sc-line-val">82,000 FCFA</span></div>
+        <div class="sc-line"><span class="sc-line-lbl">Points total</span><span class="sc-line-val">105 pts ✓ likely 1st</span></div>
+        <div class="sc-line hl"><span class="sc-line-lbl">Leaderboard prize (1st)</span><span class="sc-line-val">+50,000 FCFA</span></div>
+        <div class="sc-line hl"><span class="sc-line-lbl">Tier 3 Hunter (18 sales)</span><span class="sc-line-val">+50,000 FCFA</span></div>
+        <div class="sc-total">
+          <span class="sc-total-lbl">Total earnings</span>
+          <span class="sc-total-val">182,000 FCFA</span>
+          <span class="sc-total-eq">≈ $328 USD · ₦528,000 NGN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     ATTEND FOR FREE
+══════════════════════════════════════ -->
+<section class="free-section pad">
+  <div class="free-inner">
+    <div class="chip c g">Bonus opportunity</div>
+    <h2 class="free-h">The training can pay<br>for <em>itself.</em></h2>
+    <div class="free-rule"></div>
+    <p class="free-p">Can't afford the training ticket? Become an affiliate first. <strong>Sell 5 tickets and your commission covers your entire ticket price</strong> — regardless of which tier you're in. After that, everything else is profit.</p>
+
+    <div class="free-cards">
+      <div class="free-card">
+        <div class="fc-tag">Foundation Build</div>
+        <div class="fc-name">Your ticket: 5,000 FCFA</div>
+        <div class="fc-ticket">5 Tier 1 sales → <span>5,000 FCFA</span></div>
+        <p class="fc-calc">5 sales × 1,000 FCFA commission = <span>5,000 FCFA</span>. Your ticket is paid. Sell one more and you're in profit.</p>
+      </div>
+      <div class="free-card">
+        <div class="fc-tag">Audience Engine</div>
+        <div class="fc-name">Your ticket: 10,000 FCFA</div>
+        <div class="fc-ticket">5 Tier 2 sales → <span>10,000 FCFA</span></div>
+        <p class="fc-calc">5 sales × 2,000 FCFA commission = <span>10,000 FCFA</span>. Your ticket is paid. Every sale after that is pure profit.</p>
+      </div>
+      <div class="free-card">
+        <div class="fc-tag">Complete Business OS</div>
+        <div class="fc-name">Your ticket: 20,000 FCFA</div>
+        <div class="fc-ticket">5 Tier 3 sales → <span>20,000 FCFA</span></div>
+        <p class="fc-calc">5 sales × 4,000 FCFA commission = <span>20,000 FCFA</span>. Your Agency Pass costs you nothing. And those 5 sales already put you on the Hunter Bonus path.</p>
+      </div>
+    </div>
+
+    <div class="free-pull">"Five referrals and you attend the training for free. Everything after that is a July income that didn't exist before this program. That's the point of the First Edition Circle."</div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     EXCLUSIVITY
+══════════════════════════════════════ -->
+<section class="exclusive pad">
+  <div class="excl-grid">
+    <div>
+      <div class="chip r">Strictly limited</div>
+      <h2 class="excl-h">Only <em>30</em> affiliates.<br>No exceptions.</h2>
+      <div class="sec-rule"></div>
+      <p class="excl-p">The First Edition Circle is intentionally small. <strong>Only 30 affiliates will be accepted into the program.</strong> After that, registration closes permanently.</p>
+      <p class="excl-p">This isn't a marketing tactic. It's how we protect the quality of the program. Fewer affiliates means each person gets a better return, cleaner competition, and more personal support from Brenda throughout the four weeks.</p>
+      <p class="excl-p">You join the WhatsApp group to express interest. From there, we run the registration process. Once 30 spots are filled — the program closes.</p>
+      <div class="rules-list" style="margin-top:2rem">
+        <div class="rule"><span class="rule-icon">📅</span><p class="rule-text"><strong>Duration:</strong> June 14 – July 16, 2026. Four weeks. One sprint.</p></div>
+        <div class="rule"><span class="rule-icon">🔗</span><p class="rule-text"><strong>Your link:</strong> A unique Selar affiliate link that tracks every sale automatically.</p></div>
+        <div class="rule"><span class="rule-icon">💳</span><p class="rule-text"><strong>Commission payments:</strong> Automatic via Selar after each sale. No chasing.</p></div>
+        <div class="rule"><span class="rule-icon">🏆</span><p class="rule-text"><strong>Prize payments:</strong> Leaderboard + Hunter Bonuses paid at close of program, July 16.</p></div>
+        <div class="rule"><span class="rule-icon">📲</span><p class="rule-text"><strong>Support:</strong> Direct access to Brenda throughout the program via WhatsApp group.</p></div>
+      </div>
+    </div>
+
+    <div class="spots-visual">
+      <span class="spots-big">30</span>
+      <div class="spots-label">Affiliate spots available</div>
+      <div class="spots-sub">When they're gone, the program closes.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     TIMELINE
+══════════════════════════════════════ -->
+<section class="timeline pad">
+  <div class="tl-head">
+    <div class="chip c">Program timeline</div>
+    <h2 class="sec-h2">Four weeks.<br>One <em>focused sprint.</em></h2>
+    <div class="sec-rule c"></div>
+  </div>
+  <div class="tl-track">
+    <div class="tl-line"></div>
+    <div class="tl-events">
+      <div class="tl-event tl-open">
+        <div class="tl-dot">Open</div>
+        <span class="tl-date">June 14</span>
+        <span class="tl-label">Group Opens</span>
+        <p class="tl-desc">WhatsApp group opens. Registration begins. First 30 affiliates get their Selar links.</p>
+      </div>
+      <div class="tl-event tl-reg">
+        <div class="tl-dot">GO</div>
+        <span class="tl-date">June 15</span>
+        <span class="tl-label">Selling Begins</span>
+        <p class="tl-desc">Main enrollment opens to the public. Your affiliate links go live. Every sale from today counts.</p>
+      </div>
+      <div class="tl-event tl-earn">
+        <div class="tl-dot">Earn</div>
+        <span class="tl-date">June 15–July 15</span>
+        <span class="tl-label">Four Weeks of Earning</span>
+        <p class="tl-desc">Commissions paid automatically on every sale. Leaderboard updated in real time via group updates.</p>
+      </div>
+      <div class="tl-event tl-end">
+        <div class="tl-dot">Win</div>
+        <span class="tl-date">July 16</span>
+        <span class="tl-label">Training Starts · Prizes Paid</span>
+        <p class="tl-desc">Enrollment closes. Leaderboard finalised. Prize payments and Hunter Bonuses distributed. Training begins.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FINAL CTA
+══════════════════════════════════════ -->
+<section class="final pad">
+  <div class="final-inner">
+    <div class="chip c g">Ready to join?</div>
+    <h2 class="final-h">30 spots.<br>Four weeks.<br><em>Your move.</em></h2>
+    <div class="final-rule"></div>
+    <p class="final-body">
+      20% commission on every sale. Leaderboard prizes for the top 3.
+      Hunter Bonuses for Tier 3 specialists. Your ticket potentially free.
+      <strong>Everything running simultaneously for four weeks.</strong><br><br>
+      Join the WhatsApp group to register.
+      Once 30 affiliates are confirmed — the program closes permanently.
+    </p>
+
+    <div class="final-amount">
+      <span class="fa-n">150K</span>
+      <span class="fa-u">FCFA possible</span>
+    </div>
+
+    <a class="btn-wa" href="[WHATSAPP-GROUP-LINK]" target="_blank" style="font-size:.66rem;padding:20px 48px;display:inline-flex;margin:0 auto">
+      <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Join the WhatsApp Group — 30 Spots Only <span class="arr">→</span>
+    </a>
+
+    <div class="final-note">
+      First Edition Circle™ · June 14 – July 16, 2026 · 30 affiliates maximum<br>
+      AI Solopreneur Toolkit™ · Brenda Blanche · The Unapologetics
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-brand">The Unapologetics · Brenda Blanche · First Edition Circle™</div>
+  <div class="footer-note">AI Solopreneur Toolkit™ · First Edition · © 2026</div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="sticky-cta" id="sticky">
+  <div class="sticky-cta-inner">
+    <div class="sticky-cta-text"><strong>30 affiliate spots · June 14 – July 16</strong>Up to 150,000 FCFA / $250+</div>
+    <a class="btn-ghost-wa" href="[WHATSAPP-GROUP-LINK]" target="_blank">Join →</a>
+  </div>
+</div>
+
+<script>
+/* Countdown to June 14 */
+(function tick(){
+  var t=new Date('2026-06-14T00:00:00').getTime()-Date.now();
+  if(t<0)t=0;
+  function p(n){return String(Math.floor(n)).padStart(2,'0');}
+  document.getElementById('cd-d').textContent=p(t/864e5);
+  document.getElementById('cd-h').textContent=p((t%864e5)/36e5);
+  document.getElementById('cd-m').textContent=p((t%36e5)/6e4);
+  document.getElementById('cd-s').textContent=p((t%6e4)/1e3);
+  setTimeout(tick,1000);
+})();
+
+/* Nav active */
+window.addEventListener('scroll',function(){
+  document.querySelector('.nav').style.borderBottomColor=window.scrollY>80?'rgba(196,146,58,.25)':'rgba(255,255,255,.07)';
+},{passive:true});
+
+/* Hunter track animation on scroll */
+var tracked=false;
+window.addEventListener('scroll',function(){
+  var el=document.querySelector('.hunter-track-fill');
+  if(!el||tracked)return;
+  var rect=document.querySelector('.hunter-track').getBoundingClientRect();
+  if(rect.top<window.innerHeight*.85){el.style.animationPlayState='running';tracked=true;}
+},{passive:true});
+</script>
+</body>
+</html>
